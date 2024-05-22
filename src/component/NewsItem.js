@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 
 const NewsItem = (props) => {
   let { title, descr, img, newsurl, source, author, date } = props;
@@ -19,7 +19,12 @@ const NewsItem = (props) => {
             {source}
             <span className="visually-hidden">unread messages</span>
           </span>
-          <a href={newsurl} target="_blank" className="btn btn-dark">
+          <a
+            href={newsurl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-dark"
+          >
             Know more
           </a>
         </div>
