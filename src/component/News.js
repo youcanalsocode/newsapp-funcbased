@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from "react";
 import NewsItem from "./NewsItem";
-import { toBeInTheDOM } from "@testing-library/jest-dom/dist/matchers";
+
 import Spinner from "./Spinner";
 import PropTypes from "prop-types";
 import InfiniteScroll from "react-infinite-scroll-component";
-import { LoadingBar } from "react-top-loading-bar"; // Importing the loading bar
 
-const capitalize = (strings) => {
-  return strings.charAt(0).toUpperCase() + strings.slice(1);
-};
+// const capitalize = (strings) => {
+//   return strings.charAt(0).toUpperCase() + strings.slice(1);
+// };
 
 const News = (props) => {
   const [articles, setarticles] = useState([]);
